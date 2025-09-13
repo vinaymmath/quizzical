@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Background from "./Background";
 import SplashScreen from "./views/SplashScreen";
 import Questionaire from "./views/Questionaire";
 import { decode } from "html-entities";
@@ -64,7 +63,6 @@ function App() {
   return (
     <main>
       <div className="view-container">
-        <Background />
         {
           step === 1 ? (
             <SplashScreen changeStep={() => changeStep(2)} isLoading={isLoading}/>
